@@ -1,0 +1,6 @@
+# Project exclude paths
+/NAS-Plus-APIGateway/target/
+/NAS-Plus-Entitys/target/
+/NAS-Plus-ServerEureka/target/
+/NAS-Plus-ServerHystrix/target/
+/NAS-Plus-Service-User/target/

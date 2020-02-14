@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="NAS-Plus-APIGateway" />
+        <module name="NAS-Plus-Service-User" />
+        <module name="NAS-Plus-ServerHystrix" />
+        <module name="NAS-Plus-Entitys" />
+        <module name="NAS-Plus-ServerEureka" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="NAS-Plus-APIGateway" options="-parameters" />
+      <module name="NAS-Plus-Entitys" options="-parameters" />
+      <module name="NAS-Plus-ServerEureka" options="-parameters" />
+      <module name="NAS-Plus-ServerHystrix" options="-parameters" />
+      <module name="NAS-Plus-Service-User" options="-parameters" />
+    </option>
+  </component>
+</project>
