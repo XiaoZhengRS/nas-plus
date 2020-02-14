@@ -9,6 +9,8 @@ public interface UserService {
 
     UserPoJo getUserById(Integer id);
 
+    UserPoJo getUserByUserName(String userName);
+
     List<UserPoJo> getALLUser();
 
     boolean setUserByUserName(String userName, UserPoJo userPoJo);

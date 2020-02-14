@@ -1,5 +1,6 @@
 package com.xiaozhengkeji.nasplus.service.impl;
 
+
 import com.xiaozhengkeji.nasplus.entitys.UserPoJo;
 import com.xiaozhengkeji.nasplus.service.UserService;
 
@@ -13,6 +14,11 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public UserPoJo getUserById(Integer id) {
+        return null;
+    }
+
+    @Override
+    public UserPoJo getUserByUserName(String userName) {
         return null;
     }
 
