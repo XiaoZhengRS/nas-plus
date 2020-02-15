@@ -6,11 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="NAS-Plus-APIGateway" />
-        <module name="NAS-Plus-Service-User" />
-        <module name="NAS-Plus-ServerHystrix" />
-        <module name="NAS-Plus-Entitys" />
+        <module name="NAS-Plus-Hystrix-DashBoard" />
         <module name="NAS-Plus-ServerEureka" />
+        <module name="NAS-Plus-ServerHystrix" />
+        <module name="NAS-Plus-APIGateway" />
+        <module name="NAS-Plus-Entitys" />
+        <module name="NAS-Plus-Service-User" />
       </profile>
     </annotationProcessing>
   </component>
@@ -18,6 +19,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="NAS-Plus-APIGateway" options="-parameters" />
       <module name="NAS-Plus-Entitys" options="-parameters" />
+      <module name="NAS-Plus-Hystrix-DashBoard" options="-parameters" />
       <module name="NAS-Plus-ServerEureka" options="-parameters" />
       <module name="NAS-Plus-ServerHystrix" options="-parameters" />
       <module name="NAS-Plus-Service-User" options="-parameters" />

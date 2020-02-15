@@ -76,5 +76,15 @@ public class UserController {
         return new LoginBean().setToken("登陆失败!服务自动熔断!");
     }
 
+    @HystrixCommand(fallbackMethod = "ifTokenFallbac")
+    @RequestMapping(value = "/token/if", method = RequestMethod.POST)
+    public boolean ifToken(@RequestBody LoginBean user) {
+        return JWTUtil.校验(user.getToken(), user.getUserPoJo().getUsername(), user.getUserPoJo().getPassword());
+    }
 
+
+    public boolean ifTokenFallbac(@RequestBody LoginBean user) {
+        log.error("启动服务熔断机制!\n" + user.toString());
+        return false;
+    }
 }

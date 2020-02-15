@@ -13,6 +13,7 @@
         <module>NAS-Plus-APIGateway</module>
         <module>NAS-Plus-Entitys</module>
         <module>NAS-Plus-Service-User</module>
+        <module>NAS-Plus-Hystrix-DashBoard</module>
     </modules>
     <dependencies>
         <dependency>
